@@ -4,6 +4,9 @@
   "description": "This application scrapes  articles from [The Onion](https://www.theonion.com). It allows users to save articles to a MongoDB and allows comments to be attached to the saved articles.",
   "main": "server.js",
   "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
     "mongoose": "^5.5.4",
     "request": "^2.88.0"
   },
