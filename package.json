@@ -1,8 +1,13 @@
 {
-  "name": "news-scrape-md",
+  "name": "news-scrape",
   "version": "1.0.0",
-  "description": "Scraper getting articles from The Onion and allowing users to save and comment on their favorite articles.",
+  "description": "This application scrapes  articles from [The Onion](https://www.theonion.com). It allows users to save articles to a MongoDB and allows comments to be attached to the saved articles.",
   "main": "server.js",
+  "dependencies": {
+    "mongoose": "^5.5.4",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -11,31 +16,10 @@
     "type": "git",
     "url": "git+https://github.com/poncediazdeleon/news-scrape.git"
   },
-  "keywords": [
-    "Onion",
-    "fake",
-    "express",
-    "handlebars",
-    "mongoose",
-    "body-parser",
-    "cheerio",
-    "request",
-    "mongodb"
-  ],
-  "author": "BZ",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/poncediazdeleon/news-scrape"
+    "url": "https://github.com/poncediazdeleon/news-scrape/issues"
   },
-  "homepage": "https://github.com/poncediazdeleon/news-scrape#readme",
-  "dependencies": {
-    "axios": "^0.18.0",
-    "body-parser": "^1.18.2",
-    "cheerio": "^1.0.0-rc.2",
-    "express": "^4.16.3",
-    "express-handlebars": "^3.0.0",
-    "mongoose": "^5.5.4",
-    "morgan": "^1.9.1",
-    "request": "^2.88.0"
-  }
+  "homepage": "https://github.com/poncediazdeleon/news-scrape#readme"
 }
