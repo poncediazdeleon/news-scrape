@@ -1,0 +1,27 @@
+{{#each articles}}
+  <div class="card border-dark mb-3">
+    <div class="card-header">
+      <h4>
+        <div class="row">
+          <div class="col-md-10">
+            <a target="_blank" rel="noopener noreferrer" href={{link}}>
+              {{title}}
+            </a>
+          </div>
+          <div class="col-md-2">
+            {{#if saved}}
+              <a class="btn btn-dark delArticle" data-id="{{_id}}">Delete Article</a>
+              <a class="btn btn-dark note" data-id="{{_id}}" data-toggle="modal" data-target="#notes-modal">Comments</a>
+            {{else}}
+              <a class="btn btn-dark save" data-title="{{title}}" data-link="{{link}}" data-summary="{{summary}}" data-picture="{{picture}}">Save Article</a>
+            {{/if}}
+          </div>
+        </div>
+      </h4>
+    </div>
+    <div class="card-body">
+      <img src={{picture}}>
+      <p class="summary">{{summary}}</p>
+    </div>
+  </div>
+{{/each}}
